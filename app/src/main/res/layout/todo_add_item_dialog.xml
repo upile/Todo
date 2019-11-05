@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccentTransparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/closeDialogImg"
+        android:layout_width="@dimen/imageViewWidth"
+        android:layout_height="@dimen/imageViewHeight"
+        android:layout_margin="@dimen/tenDensityPixels"
+        android:src="@android:drawable/btn_dialog"
+        android:tint="#fff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/closeDialogImg"
+        android:layout_centerInParent="true"
+        android:background="#FFF">
+
+        <RelativeLayout
+            android:id="@+id/task_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tenDensityPixels">
+
+            <EditText
+                android:id="@+id/todoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="@string/enter_task_title"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/todoDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/todoTitle"
+                android:ems="10"
+                android:hint="@string/enter_task_description"
+                android:inputType="textPersonName" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_content"
+            android:gravity="center_horizontal"
+            android:text="@string/add_task" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageViewWidth">40dp</dimen>
+    <dimen name="imageViewHeight">40dp</dimen>
+    <dimen name="tenDensityPixels">10dp</dimen>
+    <dimen name="twentyFiveDp">25dp</dimen>
+    <dimen name="FifteenDp">15dp</dimen>
+    <dimen name="smallTextSize">12sp</dimen>
+    <dimen name="twentyDp">20dp</dimen>
+    <dimen name="sixteenDp">16dp</dimen>
+    <dimen name="fiveDp">5dp</dimen>
+    <dimen name="borderHeight">1dp</dimen>
+</resources>
